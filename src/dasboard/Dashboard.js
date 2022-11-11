@@ -66,7 +66,6 @@ const Dashboard = () => {
                         </tr>
                     </tbody>
                 </table>
-                <Imagedragon/>
                     <div>
 
                         {/* 6 */}

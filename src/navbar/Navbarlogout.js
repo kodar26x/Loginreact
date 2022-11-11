@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-bootstrap';
+import Imagedragon from '../inputgambar/inputimg';
 
 const Nabur = () => {
     const navigate = useNavigate();
@@ -18,7 +19,9 @@ const Nabur = () => {
             console.log(error);
         }
     }
-
+    const update = () => {
+        navigate("/Imagedragone")
+    }
 
     return (
 
@@ -27,8 +30,8 @@ const Nabur = () => {
                 <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                 <Nav className="me-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <NavLink onClick={Logout} className="button is-light">Log Out</NavLink>
+                    <Nav.Link oneClick={update} >upload Gambar</Nav.Link >
+                        <NavLink onClick={Logout} className="button is-light">Log Out</NavLink>
                 </Nav>
             </Container>
         </Navbar>
